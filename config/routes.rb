@@ -1,6 +1,7 @@
 BBBWebsite::Application.routes.draw do
+  resources :events
+
   match '/index' => 'bbbcore#index', via: :get
-  match '/events' => 'bbbcore#events', via: :get
   match '/shop' => 'bbbcore#shop', via: :get
   match '/discussion' => 'bbbcore#discussion', via: :get
   
